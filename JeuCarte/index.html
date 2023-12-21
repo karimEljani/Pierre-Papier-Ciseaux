@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pierre-Papier-Ciseaux en JavaScript</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+        button {
+            font-size: 18px;
+            padding: 12px 20px;
+            margin: 10px;
+            cursor: pointer;
+            background-color: #4caf50;
+            color: #fff;
+            border: 1px solid #4caf50;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #resultat {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pierre-Papier-Ciseaux</h1>
+    <p>Choisissez votre coup :</p>
+
+    <button onclick="jouer('pierre')">Pierre &#x1F5FF;</button>
+    <button onclick="jouer('papier')">Papier &#x1F4F0;</button>
+    <button onclick="jouer('ciseaux')">Ciseaux &#x2702;</button>
+
+    <h2>Résultat</h2>
+    <p id="resultat"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
